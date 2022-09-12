@@ -1,7 +1,11 @@
+const mongoose = require('mongoose')
 const express = require('express')
 const app = express()
 
-app.get('/', (req, res)=> {
-    res.send("yes")
+mongoose.connect("mongodb://localhost/goodFoods", ()=>{
+    console.log('connected')
 })
-app.listen(3000)
+
+//     res.send("yes")
+// })
+// app.listen(3000)
