@@ -4,7 +4,7 @@ const app = express()
 
 mongoose.connect("mongodb://localhost/goodFoods", ()=>{
     console.log('connected')
-})
+}, e => console.log(e))
 
 //     res.send("yes")
 // })
